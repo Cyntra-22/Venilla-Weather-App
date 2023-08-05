@@ -10,15 +10,16 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="weather-wrapper">
         <div class="weather-app">
           <div class="overview">
-            <h1>New York</h1>
+            <h1 id="city">New York</h1>
             <ul>
-              <li>Saturday 07:27</li>
+              <li id="description">Saturday 07:27</li>
               <li>Clear</li>
             </ul>
           </div>
@@ -30,15 +31,15 @@
                   alt="Clear"
                 />
                 <div>
-                  <strong>25</strong><span class="units">°C | <a href="#">°F</a></span>
+                  <strong id="temperature"></strong
+                  ><span class="units">°C | <a href="#">°F</a></span>
                 </div>
               </div>
             </div>
             <div class="col-md-6">
               <ul>
-                <li>Precipitation: 2%</li>
-                <li>Humidity: 79%</li>
-                <li>Wind: 5 km/h</li>
+                <li>Humidity: <span id="humidity">79</span>%</li>
+                <li>Wind: <spand id="speed">5</spand> km/h</li>
               </ul>
             </div>
           </div>
