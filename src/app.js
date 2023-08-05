@@ -25,6 +25,7 @@ function formatDate(timestemp) {
 }
 
 function displayTemperature(response) {
+ 
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(response.data.temperature.current);
 
@@ -42,10 +43,15 @@ function displayTemperature(response) {
 
   let dateElement = document.querySelector("#date");
   dateElement.innerHTML = formatDate(response.data.time * 1000);
+
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute("src",response.data.condition.icon_url);
+
+  iconElement.setAttribute("alt", response.data.condition.description);
 }
 
 let apiKey = "d01eb3ad3ceo6b4c8t9cf27d410a60cd";
-let city = "Korea";
+let city = "Japan";
 let apiUrl =
   `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
 
