@@ -73,3 +73,16 @@ a {
   cursor: default;
 }
 
+.weather_forecast{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.weather_forecast_date, .weather_forecast_temperature_min {
+  opacity: 0.5;
+  font-size: 16px;
+}
+
+.weather_forecast_temperature{
+  font-size: 13px;
+}
