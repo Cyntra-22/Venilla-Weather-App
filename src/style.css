@@ -78,9 +78,13 @@ a {
   text-align: center;
 }
 
-.weather_forecast_date, .weather_forecast_temperature_min {
+.weather_forecast_date {
   opacity: 0.5;
   font-size: 16px;
+}
+
+.weather_forecast_temperature_min{
+  opacity: 0.5;
 }
 
 .weather_forecast_temperature{
